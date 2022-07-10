@@ -42,8 +42,8 @@ img, picture, video, iframe, figure {
   width: 100%;
   display: block;
   /* opcional */
-  /* -o-object-fit: cover;
-     object-fit: cover; */
+  -o-object-fit: cover;
+     object-fit: cover;
   /* opcional */
   -o-object-position: center center;
      object-position: center center;

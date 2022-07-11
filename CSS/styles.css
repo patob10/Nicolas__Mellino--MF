@@ -786,19 +786,21 @@
     }
     .footer__wrapper{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        height: auto;
         width: 100%;
     }
     .footer__wrapper1{
-        height: auto;
-        width: 50%;
+        height: fit-content auto;
+        width: 100%;
         margin: 0 auto;
+        flex-grow: 0.5;
     }
 
     .footer__wrapper2{
         display: flex;
         justify-content: center;
-        height: 0.5rem;
+        height: fit-content auto;
         width: 100%;
     }
 

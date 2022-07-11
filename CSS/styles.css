@@ -148,7 +148,7 @@
 
 .galery__img{
     width: 100%;
-    padding: 5px;
+    padding: 5px;;
 }
 
 .galery__img:hover {
@@ -431,7 +431,7 @@
 /* Fin propiedades section film.html */
 
 /* Inicio propiedades section about.html */
-        /* INICIO CON FLEX */
+        /* INICIO CON GRID */
 /* .biography {
     margin: 10px;
     margin-top: 2%;
@@ -532,6 +532,8 @@
 
     .section--biography{
         height: auto;
+        margin-left: 1em;
+        margin-right: 1em; 
     }
 
     .biography__div--1{
@@ -546,10 +548,6 @@
        width: 100%;
        position: static;
       }
-      .section--biography{
-        margin-left: 1em;
-        margin-right: 1em;   
-    }
         .biography__p{
             text-align: center;
         }

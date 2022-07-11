@@ -1,0 +1,58 @@
+
+// $colores: (
+//     "primary-color"  : #6C6D73,
+//     "hover-color" : rgba(0, 0, 255, 0.384),
+//     "title-color" : #0000007a,
+//     "boder-color" : rgba(0, 0, 255, 0.384),
+//     "form-color-background" : rgba(0, 0, 0, 0.779),
+//     "form-color-text" : whitesmoke,
+// );
+
+// $fuentes : (
+//     "normal"  : Verdana,
+//     "titulo" : Helvetica
+// );
+
+//COLORES
+$primary-color: #6C6D73;
+$hover-color: rgba(0, 0, 255, 0.384);
+$title-color: #0000007a;
+$border-color: rgba(0, 0, 255, 0.384);
+$form-background-color: rgba(0, 0, 0, 0.779);
+$form-text-color: whitesmoke;
+
+//FUENTES
+$primary-font: serif;
+$title-font: Helvetica;
+
+.title{
+    display: flex;
+    justify-content: left;
+    margin-right: 2rem;
+    flex-direction:column-reverse;
+
+    &__h1{
+        font-family: $title-font;
+        color: $title-color ;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        text-align: right;
+        text-decoration-line: initial;
+        opacity: 0.9;
+        width: 100%;
+
+        &--left{
+            text-align: left;
+            margin-left: 2rem;
+        }
+    }
+
+  
+}
+
+// @media only screen and (max-width: 576px) {
+//     .title__h1{
+//         font-size: 20px;
+//     }
+// }

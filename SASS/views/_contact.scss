@@ -1,0 +1,166 @@
+.contact {
+    &__div {
+        &--email {
+            grid-column: 2 / span 2;
+            grid-row: 2 / 2;
+            text-align: center;
+        }
+
+        &--lastname {
+            grid-column: 4 / span 3;
+            grid-row: 1 / 1;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        &--name {
+            grid-column: 2 /  span 2;
+            grid-row: 1 / 1;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        &--submit {
+            grid-column: 2 /  span 4;
+            grid-row: 4 / 4;
+            text-align: center;
+        }
+
+        &--textarea {
+            grid-column: 2 /  span 4;
+            grid-row: 3 / 3;
+            text-align: center;
+        }
+
+        &--thanks {
+            grid-column: 3 /  span 4;
+            grid-row: 4 / 4;
+            text-align: center;
+        }
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 50px 0px 300px 0px ;
+        grid-template-rows: 10px 10px 10px 10px 10px;
+        column-gap: 10rem; 
+        margin-right: 5em;
+        row-gap: 7rem;
+        margin-top: 2em;
+        color: $form-text-color;
+        font-family: $primary-font;
+    }
+
+    &__imput {
+        &--email, &--text {
+            width:100%;
+            padding:3px 10px;
+            border: none;
+            border-bottom:2px solid  $form-text-color;
+            border-radius:3px;
+            margin:8px 0;
+            display:inline-block;
+            grid-column: 4 /  4;
+            grid-row: 1 / 1;
+            text-align: left;
+        }
+
+        &--submit {
+            width: 15em;
+            padding:8px 16px;
+            margin-top:32px;
+            border:1px solid $form-text-color;
+            border-radius:10px;
+            display:block;
+            background-color:$form-background-color;
+
+            &:hover{
+                cursor:pointer;
+                background-color: $hover-color;
+            }
+        }
+
+    }
+    ::placeholder {
+        color: $form-text-color;
+        font-size: 1.5em;
+      }
+    &__p {
+        padding:8px 16px;
+        margin-top:32px;
+        color: $form-text-color;
+        font-size: 1.5em;
+    }
+
+    &__textarea {
+        width:100%;
+        padding:3px 10px;
+        border: none;
+        border-bottom:2px solid $form-text-color;
+        border-radius:3px;
+        margin:8px 0;
+        display:inline-block;
+        grid-column: 4 /  4;
+        grid-row: 1 / 1;
+        text-align: left;
+    }
+}
+
+.info {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns:  50px 0px 300px 50px;
+    grid-template-rows: 50px 50px;
+    column-gap: 10rem; 
+    row-gap: 10rem;
+
+    &__div {
+        &--1 {
+            grid-column: 2 /  2;
+            grid-row: 1 / 1;
+            text-align: center;
+        }
+
+        &--2 {
+            grid-column: 4 / 4;
+            grid-row: 1 / 1;
+            text-align: center;
+        }
+
+        &--3 {
+            grid-column: 2 / 2;
+            grid-row: 2 / 2;
+            text-align: center;
+        }
+
+        &--4 {
+            grid-column: 4 / 4;
+            grid-row: 2 / 2;
+            text-align: center;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.section {
+    &__hr {
+        margin-top: 3rem;
+        &--hr__hr {
+            border-color: $border-color; 
+        }
+    }
+
+    &--form {
+        background-color: $form-background-color;
+        /* box-shadow:  0 -5px 5px 0 5px -5px black; */
+        box-shadow: inset 0px 11px 8px -10px $form-text-color,
+            inset 0px -11px 8px -10px $form-text-color;
+        border-radius: 0.5rem;
+    }
+
+}

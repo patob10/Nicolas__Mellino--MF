@@ -1,3 +1,9 @@
+$primary-color: #6C6D73;
+$hover-color: rgba(0, 0, 255, 0.384);
+$primary-font: serif;
+$title-font: Helvetica;
+$nav-font: 'Roboto-Serif';
+
 .header {
 
     display: flex;
@@ -51,18 +57,18 @@
     &__a {
         text-decoration: none;
         display: inline-block;
-        font-family: 'Roboto Serif';
+        font-family: $nav-font;
         font-style: italic;
         font-weight: 500;
         font-size: 22px;
-        color: #6C6D73;
+        color: $primary-color;
         padding: 0.5rem;
 
        
     }
 
     &__a:hover{
-        color: rgba(0, 0, 255, 0.384);
+        color: $hover-color;
     }
 
     @media only screen and (max-width: 576px) {

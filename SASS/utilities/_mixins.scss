@@ -1,0 +1,58 @@
+//BREAKPOINTS
+
+    //CEL:
+        //Pequeño: 0 - 320px
+        //grande: 320px. 480px
+    //TABLET
+        //Pequeño: 480px - 768px
+        //Grande: 768px - 960px
+    //Laptop: 960px - 1024px
+    //Escritorio: 1024px - 1328px
+
+///////////////////////////////////////////////////////////////////////
+
+//Mixin @media
+    // @mixin cel(){
+    //     @media screen and (max-width: 480px) {
+    //         @content;    
+    //     }
+    // }
+
+    // @mixin cel( $medida : 480px ){
+    //     @media screen and (max-width: $medida ) {
+    //         @content;
+    //     }
+    // }
+
+    // .clase{
+    //     width:25%;
+    //     @include cel(768px){ width:50% }
+    //     @include cel(){ width:100% }
+    // }
+
+///////////////////////////////////////////////////////////////////////
+
+//mixin flex
+
+    // @mixin flex( $dis , $direction , $corte , $just , $align ){
+    //     display         : $dis;
+    //     flex-flow       : $direction $corte;
+    //     justify-content : $just;
+    //     align-items     : $align;
+    // }
+
+////////////////////////////////////////////////////////////////////////
+
+//mixin Grid
+
+// @mixin grid( $columnas , $espacio){
+    //     display                 : grid;
+    //     grid-template-columns   : repeat( $columnas , 1fr );
+    //     gap                     : $espacio;
+
+    //     @media screen and (max-width:480px) {
+    //         grid-template-columns : 1fr ;
+    //         gap : 0em;
+    //     }
+    // }
+

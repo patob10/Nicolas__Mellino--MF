@@ -56,3 +56,26 @@
     //     }
     // }
 
+
+    //mixin Grid LAYOUT GENERAL
+
+// @mixin grid( $columnas , $espacio , $altura: 100vh){
+    //     display                 : grid;
+    //     grid-template-columns   : repeat( $columnas , 1fr );
+    //     gap                     : $espacio;
+    //     height                  : $altura;
+    //     //grid-template-rows : 1fr 2fr 2fr 1fr
+    //     // grid-template-areas: 
+    //     // "header header header header
+    //     // "main main main main 
+    //     // "section1 section2 section3 section4
+    //     // "header header header header
+    // }
+
+    //     @media screen and (max-width:480px) {
+    //         grid-template-columns : 1fr ;
+    //         gap : 0em;
+    //     }
+    // }
+
+

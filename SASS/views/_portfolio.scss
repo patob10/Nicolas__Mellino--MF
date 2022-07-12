@@ -1,5 +1,5 @@
 .layout-grid{
-    
+    @include grid (4, 1em);
 }
 
 .projects 

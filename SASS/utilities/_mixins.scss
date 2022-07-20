@@ -11,24 +11,32 @@
 
 ///////////////////////////////////////////////////////////////////////
 
-//Mixin @media
-    // @mixin cel(){
-    //     @media screen and (max-width: 480px) {
-    //         @content;    
-    //     }
-    // }
+// Mixin @media
+    @mixin tablet__small{
+        @media screen and (min-width: 600px) {
+            @content;    
+        }
+    }
 
-    // @mixin cel( $medida : 480px ){
-    //     @media screen and (max-width: $medida ) {
-    //         @content;
-    //     }
-    // }
+    @mixin tablet{
+        @media screen and (min-width: 760px) {
+            @content;    
+        }
+    }
 
-    // .clase{
-    //     width:25%;
-    //     @include cel(768px){ width:50% }
-    //     @include cel(){ width:100% }
-    // }
+    @mixin laptop__small{
+        @media screen and (min-width: 1024px) {
+            @content;    
+        }
+    }
+
+    @mixin desktop{
+        @media screen and (min-width: 12004px) {
+            @content;    
+        }
+    }
+
+
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -56,21 +64,4 @@
         @content;
 }
 
-    //     @media screen and (max-width:480px) {
-    //         grid-template-columns : 1fr ;
-    //         gap : 0em;
-    //     }
-    // }
 
-// @mixin grid( $columnas , $espacio , $altura: 100vh){
-    //     display                 : grid;
-    //     grid-template-columns   : repeat( $columnas , 1fr );
-    //     gap                     : $espacio;
-    //     height                  : $altura;
-    //     //grid-template-rows : 1fr 2fr 2fr 1fr
-    //     // grid-template-areas: 
-    //     // "header header header header
-    //     // "main main main main 
-    //     // "section1 section2 section3 section4
-    //     // "header header header header
-    // }

@@ -58,6 +58,15 @@ body{
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .ul__a{
+        font-size: 17px;            
+    }
+
+    .header__wrapper1{
+        width: 60%;
+    }
+}
 
 @include tablet{
 
@@ -77,16 +86,10 @@ body{
     }
 }
 
-// @include desktop{
-//     .header__wrapper1{
-//         width: 30%;
-//     }
-// }
-
-@media screen and (min-width: 1200px)  {
-.header__wrapper1{
-    width: 30%;
-}
+@include desktop{
+    .header__wrapper1{
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 1300px)  {
@@ -102,4 +105,5 @@ body{
         }
     }
 
-              
+    
+   

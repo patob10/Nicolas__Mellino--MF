@@ -31,10 +31,12 @@
     }
 
     @mixin desktop{
-        @media screen and (min-width: 12004px) {
+        @media screen and (min-width: 1200px) {
             @content;    
         }
     }
+
+
 
 
 

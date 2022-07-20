@@ -34,21 +34,27 @@
 
 //mixin flex
 
-    // @mixin flex( $dis , $direction , $corte , $just , $align ){
-    //     display         : $dis;
-    //     flex-flow       : $direction $corte;
-    //     justify-content : $just;
-    //     align-items     : $align;
-    // }
+    @mixin flexbox( $direction , $corte , $just , $align ){
+        display         : flex;
+        flex-flow       : $direction $corte;
+        justify-content : $just;
+        align-items     : $align;
+        @content;
+    }
+
+   
 
 ////////////////////////////////////////////////////////////////////////
 
 //mixin Grid
 
-// @mixin grid( $columnas , $espacio){
-    //     display                 : grid;
-    //     grid-template-columns   : repeat( $columnas , 1fr );
-    //     gap                     : $espacio;
+@mixin gridlayout( $columnas ,$medidaC, $row, $medidaR, $espacio : 0){
+        display                 : grid;
+        grid-template-columns   : repeat( $columnas , $medidaC );
+        grid-template-rows      : repeat( $row , $medidaR );
+        gap                     : $espacio;
+        @content;
+}
 
     //     @media screen and (max-width:480px) {
     //         grid-template-columns : 1fr ;

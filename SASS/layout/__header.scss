@@ -75,6 +75,26 @@ $nav-font: 'Roboto-Serif';
         display: none;
     }
 }
+@include tablet__s{
+
+    .header__wrapper1{
+        width: 38%;
+    }
+
+    .ul__li{
+        padding-inline: 1em;
+    }
+}
+@include tablet__m{
+
+    .header__wrapper1{
+        width: 38%;
+    }
+
+    .ul__li{
+        padding-inline: 1em;
+    }
+}
 
 @include tablet{
 

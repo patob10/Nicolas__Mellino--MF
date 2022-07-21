@@ -1,13 +1,23 @@
 /* Error: Undefined mixin.
  *    ,
- * 19 | / @include tablet{
- * 20 | | 
- * 21 | |     .galery{
- * 22 | |         flex-direction: row;
- * 23 | |     }
- * 24 | \ }
+ * 41 | / @include tablet__s{
+ * 42 | |     .galery{
+ * 43 | |         grid-template-columns: auto auto;
+ * 44 | |         grid-template-rows: repeat(4, auto);
+ * 45 | |     }
+ * 46 | | 
+ * 47 | |     .galery__div:nth-child(1){
+ * 48 | |         grid-column: 1 / 1;
+ * 49 | |         grid-row: 2 / 1;
+ * 50 | |     }
+ * 51 | | 
+ * 52 | |     .galery__div:nth-child(1){
+ * 53 | |         grid-column: 2 / 1;
+ * 54 | |         grid-row: 2 / 1;
+ * 55 | |     }
+ * 56 | \ }
  *    '
- *   SASS\views\index.scss 19:1  root stylesheet */
+ *   SASS\views\index.scss 41:1  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -17,5 +27,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c  @include tablet{\a 20 \2502  \2502  \a 21 \2502  \2502      .galery{\a 22 \2502  \2502          flex-direction: row;\a 23 \2502  \2502      }\a 24 \2502  \2514  }\a    \2575 \a   SASS\\views\\index.scss 19:1  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 41 \2502  \250c  @include tablet__s{\a 42 \2502  \2502      .galery{\a 43 \2502  \2502          grid-template-columns: auto auto;\a 44 \2502  \2502          grid-template-rows: repeat(4, auto);\a 45 \2502  \2502      }\a 46 \2502  \2502  \a 47 \2502  \2502      .galery__div:nth-child(1){\a 48 \2502  \2502          grid-column: 1 / 1;\a 49 \2502  \2502          grid-row: 2 / 1;\a 50 \2502  \2502      }\a 51 \2502  \2502  \a 52 \2502  \2502      .galery__div:nth-child(1){\a 53 \2502  \2502          grid-column: 2 / 1;\a 54 \2502  \2502          grid-row: 2 / 1;\a 55 \2502  \2502      }\a 56 \2502  \2514  }\a    \2575 \a   SASS\\views\\index.scss 41:1  root stylesheet";
 }

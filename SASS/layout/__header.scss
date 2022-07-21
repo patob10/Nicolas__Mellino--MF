@@ -5,8 +5,8 @@ $title-font: Helvetica;
 $nav-font: 'Roboto-Serif';
 
 
-body{
-    @include gridlayout(1 , 100vw , 2 , auto){
+.body{
+    @include gridlayout(1 , 100vw , 20 , auto){
 
     };
 }
@@ -16,7 +16,6 @@ body{
     @include flexbox(column,nowrap, start, center){
         gap: 0.1em;
     };
-
     width: 100vw;
   
     &__wrapper1 {
@@ -29,12 +28,6 @@ body{
         height: 100%;
     }
 
-    &__wrapper2 {
-        @include flexbox(column,nowrap, start, center){
-            gap: 0.1em;
-        };
-        width: 100vw;
-    }
 }
 
 .ul {
@@ -58,13 +51,28 @@ body{
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+.fa-whatsapp{
+    color: #25d3657d;
+}
+
+.fa-whatsapp:hover{
+    color: #25d366;
+}
+
+@include cel__s {
+    .header{
+        flex-wrap: nowrap;
+    }
     .ul__a{
         font-size: 17px;            
     }
 
     .header__wrapper1{
         width: 60%;
+    }
+
+    .fa-whatsapp{
+        display: none;
     }
 }
 
@@ -76,11 +84,20 @@ body{
 
     .ul__li{
         padding-inline: 1em;
-
     }
 }
 
-@include laptop__small{
+@include laptop__s{
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header__wrapper1{
+        width: 30%;
+    }
+}
+
+@include laptop__b{
     .header__wrapper1{
         width: 30%;
     }
@@ -92,18 +109,8 @@ body{
     }
 }
 
-@media screen and (min-width: 1300px)  {
+@include desktop__b{
     .header__wrapper1{
-        width: 30%;
+        width: 20%;
     }
-    }
-
-
-    @media screen and (min-width: 1400px)  {
-        .header__wrapper1{
-            width: 20%;
-        }
-    }
-
-    
-   
+}

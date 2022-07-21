@@ -12,33 +12,46 @@
 ///////////////////////////////////////////////////////////////////////
 
 // Mixin @media
-    @mixin tablet__small{
-        @media screen and (min-width: 600px) {
+     @mixin cel__s{
+        @media screen and (min-width: 0px) and (max-width: 479px){
+            @content;    
+        }
+    }
+    @mixin tablet__s{
+        @media screen and (min-width: 600px) and (min-width: 700px) {
             @content;    
         }
     }
 
     @mixin tablet{
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 760px)  {
             @content;    
         }
     }
 
-    @mixin laptop__small{
+    @mixin laptop__s{
         @media screen and (min-width: 1024px) {
             @content;    
         }
     }
 
-    @mixin desktop{
+    @mixin laptop__b{
         @media screen and (min-width: 1200px) {
             @content;    
         }
     }
 
+    @mixin desktop{
+        @media screen and (min-width: 1300px) {
+            @content;    
+        }
+    }
 
-
-
+    @mixin desktop__b{
+        @media screen and (min-width: 1400px) {
+            @content;    
+        }
+    }
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -51,8 +64,6 @@
         align-items     : $align;
         @content;
     }
-
-   
 
 ////////////////////////////////////////////////////////////////////////
 

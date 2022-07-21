@@ -1,0 +1,30 @@
+.galery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+.galery__img {
+    width: 100%;
+}
+.galery__img:hover {
+    opacity: 0.5;
+    transition: 0.4s ease;
+}
+
+
+// @include cel__s {
+
+
+// }
+@include tablet{
+
+    .galery{
+        flex-direction: row;
+    }
+}
+
+@include laptop__s{
+    .galery{
+        flex-direction: row;
+    }
+}

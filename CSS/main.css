@@ -237,8 +237,8 @@ body {
 .body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100vw;
-  grid-template-columns: repeat(1, 100vw);
+  -ms-grid-columns: auto;
+  grid-template-columns: repeat(1, auto);
   -ms-grid-rows: auto 0 auto 0 auto;
   grid-template-rows: repeat(3, auto);
   gap: 0;

@@ -3,7 +3,7 @@
 
 
 .body{
-    @include gridlayout(1 , 100vw , 3 , auto){
+    @include gridlayout(1 , auto , 3 , auto){
     };
 }
 

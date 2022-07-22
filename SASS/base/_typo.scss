@@ -8,7 +8,7 @@ $title-font: Helvetica;
 $nav-font: 'Roboto-Serif';
 
 .title{
-    margin-top: 2em;
+    margin-top: 3em;
 
     &__h1 {
         font-family: $title-font;
@@ -28,9 +28,52 @@ $nav-font: 'Roboto-Serif';
         height: 2px;
         width: 40%;
         margin: 0 auto;
+        margin-top: 1em;
 
       }
 }
+
+@include tablet__s{
+.title{
+  margin-right: 2em;  
+
+  &__h1{
+    font-size: 30px;
+    text-align: right;
+  }
+  &__hr{
+    margin: auto 0 auto auto;
+    margin-top: 1em;
+  }
+}
+
+}
+
+@include tablet__m{
+  .title__h1{
+    font-size: 30px;
+    text-align: right;
+  }
+}
+
+@include tablet{
+  .title__h1{
+    font-size: 30px;
+    text-align: right;
+  }
+}
+
+@include tablet__b{
+  .title__h1{
+    font-size: 30px;
+    text-align: right;
+  }
+
+}
+
+
+
+
 
 @include laptop__s{
 .title {

@@ -41,7 +41,7 @@ display: inline-block;
 padding-inline: 1rem;
 }
 .footer {
-    width: 100vw;
+    // width: ;
     @include flexbox(column-reverse,nowrap, start, center){
         gap: 0.1em;
     };
@@ -53,8 +53,8 @@ padding-inline: 1rem;
     }
 
     &__wrapper2 {
-        width: 60%;
-        height: 15rem;
+        width: 50%;
+        height: auto;
     }
 
     &__img {

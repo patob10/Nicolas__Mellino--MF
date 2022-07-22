@@ -1,7 +1,6 @@
 @import '../base/typo';
 @import '../utilities/mixins';
 
-
 .body{
     @include gridlayout(1 , auto , 3 , auto){
     };
@@ -11,12 +10,12 @@
    
     @include flexbox(column,nowrap, start, center){
         gap: 0.1em;
+        width: 100%;
     };
-    width: 100vw;
+   
   
     &__wrapper1 {
         width: 60%;
-        height: 15rem;
     }
 
     &__img {
@@ -101,7 +100,7 @@
     .header{
         flex-direction: row;
         justify-content: space-between;
-        &wrapper1{
+        &__wrapper1{
             width: 30%;
         }
     }

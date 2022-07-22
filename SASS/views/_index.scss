@@ -1,8 +1,9 @@
 @import '../utilities/mixins';
 
 .galery{
-
-    @include gridlayout(1, 1fr, 12, 20em, 0.2em);
+    @include gridlayout(1, 100%, 12, 20em, 0.2em){
+        // width: 50%
+    };
     margin-top: 3em;
 
     &__img{
@@ -13,7 +14,7 @@
 
 @include tablet__s{
     .galery{
-        @include gridlayout(2, 1fr, 11, 11em, 0.2em);
+        @include gridlayout(2, auto, 11, 11em, 0.2em);
 
         &__div:nth-child(1){
             grid-column: 1 / span 1;
@@ -60,7 +61,11 @@
 
 @include tablet{
     .galery{
-        @include gridlayout(3, 1fr, 10, 11em, 0.2em);
+        @include gridlayout(3, auto, 10, 11em, 0.2em);
+
+        // &__div{
+        //     width: 100%;
+        // }
     
         &__div:nth-child(1){
             grid-column: 1 / span 1;
@@ -121,7 +126,9 @@
 
 @include laptop__b{
     .galery{
-        @include gridlayout(3, 1fr, 11, 11em, 0.2em);
+        @include gridlayout(3, auto, 11, 11em, 0.2em){
+            // width: 50%
+        };
 
         &__div:nth-child(1){
             grid-column: 1 / span 1;

@@ -1,6 +1,7 @@
 @import './base/reset';
+@import './base/typo';
 @import './utilities/mixins';
 @import './utilities/functions';
 @import './layout/_header';
 @import './layout/footer';
-@import './views/index.scss';
+@import './views/_index';

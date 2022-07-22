@@ -1,12 +1,7 @@
-$primary-color: #6C6D73;
-$hover-color: rgba(0, 0, 255, 0.384);
-$primary-font: serif;
-$title-font: Helvetica;
-$nav-font: 'Roboto-Serif';
-
+@import '../base/typo';
 
 .body{
-    @include gridlayout(1 , 100vw , 12 , auto){
+    @include gridlayout(1 , 100vw , 3 , auto){
 
     };
 }

@@ -1,0 +1,59 @@
+@import '../utilities/mixins';
+$primary-color: #6C6D73;
+$hover-color: rgba(0, 0, 255, 0.384);
+$hr-color: rgba(0, 0, 255, 0.384);
+$title-color: rgba(0, 0, 0, 0.858);
+$primary-font: serif;
+$title-font: Helvetica;
+$nav-font: 'Roboto-Serif';
+
+.title{
+    margin-top: 2em;
+
+    &__h1 {
+        font-family: $title-font;
+        color: $title-color;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        text-decoration-line: initial;
+        opacity: 0.9;
+        width: 100%;
+      }
+
+      &__hr{
+        border: 1;
+        color: $hr-color;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1em;
+      }
+}
+
+@include desktop{
+.title {
+    margin-right: 2rem;
+    margin-top: 1em;
+
+    &__h1 {
+        font-size: 40px;
+        text-align: right;
+
+        &--left {
+            text-align: left;
+            margin-left: 2rem;
+          }
+        
+      }
+
+      &__hr{
+        border: 1;
+        color: $hr-color;
+        width: 40%;
+        margin: auto 0 auto auto;
+        margin-top: 2em;
+      }
+  }
+
+}

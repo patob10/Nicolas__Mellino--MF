@@ -918,7 +918,7 @@ body {
     grid-row: 6/span 1;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .galery {
     -ms-grid-columns: auto 0.2em auto 0.2em auto;
     grid-template-columns: auto auto auto;

@@ -166,7 +166,7 @@
    
 }
 
-@include desktop{
+@include laptop__b{
     .galery{
         grid-template-columns: auto auto auto;
         grid-template-rows: repeat(11 , 11em);

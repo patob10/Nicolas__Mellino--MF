@@ -35,6 +35,12 @@
         }
     }
 
+    @mixin tablet__b{
+        @media screen and (min-width: 850px)  {
+            @content;    
+        }
+    }
+
     @mixin laptop__s{
         @media screen and (min-width: 1024px) {
             @content;    

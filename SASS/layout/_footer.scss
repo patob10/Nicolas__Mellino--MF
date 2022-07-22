@@ -67,7 +67,21 @@ padding-inline: 1rem;
 @include cel__s {
 
     .footer__wrapper2{
-        width: 50%;
+        width: 38%;
+    }
+}
+
+@include tablet__s{
+
+    .footer__wrapper2{
+        width: 38%;
+    }
+}
+
+@include tablet__m{
+
+    .footer__wrapper2{
+        width: 38%;
     }
 }
 
@@ -78,12 +92,19 @@ padding-inline: 1rem;
     }
 }
 
+@include tablet__b{
+
+    .footer__wrapper2{
+        width: 30%;
+    }
+}
+
 @include laptop__s{
     .footer{
         flex-direction: row;
 
         &__wrapper2{
-            width: 30%;
+            width: 20%;
         }
 
         &__wrapper3{
@@ -105,13 +126,13 @@ padding-inline: 1rem;
 
 @include laptop__b{
     .footer__wrapper2{
-        width: 30%;
+        width: 20%;
     }
 }
 
 @include desktop{
     .footer__wrapper2{
-        width: 30%;
+        width: 20%;
     }
 }
 

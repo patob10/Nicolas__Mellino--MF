@@ -15,7 +15,8 @@
    
   
     &__wrapper1 {
-        width: 60%;
+        width: 50%;
+        height: 100%;
     }
 
     &__img {
@@ -56,7 +57,7 @@
 
 @include cel__s{
     .header__wrapper1{
-        width: 50%;
+        width: 40%;
     }
 
     .ul__a{
@@ -79,10 +80,6 @@
     .header__wrapper1{
         width: 38%;
     }
-
-    .ul__li{
-        padding-inline: 1em;
-    }
 }
 
 @include tablet{
@@ -90,9 +87,12 @@
     .header__wrapper1{
         width: 38%;
     }
+}
 
-    .ul__li{
-        padding-inline: 1em;
+@include tablet__b{
+
+    .header__wrapper1{
+        width: 30%;
     }
 }
 
@@ -100,8 +100,9 @@
     .header{
         flex-direction: row;
         justify-content: space-between;
+        align-content: flex-start;
         &__wrapper1{
-            width: 30%;
+            width: 20%;
         }
     }
     
@@ -109,13 +110,13 @@
 
 @include laptop__b{
     .header__wrapper1{
-        width: 30%;
+        width: 20%;
     }
 }
 
 @include desktop{
     .header__wrapper1{
-        width: 30%;
+        width: 20%;
     }
 }
 

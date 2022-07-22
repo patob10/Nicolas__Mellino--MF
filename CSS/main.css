@@ -516,8 +516,8 @@ body {
 .galery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100vw;
-  grid-template-columns: repeat(1, 100vw);
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   -ms-grid-rows: 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em;
   grid-template-rows: repeat(12, 20em);
   gap: 0.2em;
@@ -580,8 +580,8 @@ body {
   .galery {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 0.2em auto;
-    grid-template-columns: repeat(2, auto);
+    -ms-grid-columns: 1fr 0.2em 1fr;
+    grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em;
     grid-template-rows: repeat(11, 11em);
     gap: 0.2em;
@@ -743,8 +743,8 @@ body {
   .galery {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 0.2em auto 0.2em auto;
-    grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: 1fr 0.2em 1fr 0.2em 1fr;
+    grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em;
     grid-template-rows: repeat(10, 11em);
     gap: 0.2em;
@@ -962,8 +962,8 @@ body {
   .galery {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 0.2em auto 0.2em auto;
-    grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: 1fr 0.2em 1fr 0.2em 1fr;
+    grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em 0.2em 11em;
     grid-template-rows: repeat(11, 11em);
     gap: 0.2em;

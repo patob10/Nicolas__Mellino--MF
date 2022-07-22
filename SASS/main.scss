@@ -1,7 +1,7 @@
-@import './base/reset';
-@import './base/typo';
-@import './utilities/mixins';
+@import './base/_reset';
+@import './base/_typo';
+@import './utilities/_mixins';
 @import './utilities/functions';
 @import './layout/_header';
-@import './layout/footer';
+@import './layout/_footer';
 @import './views/_index';

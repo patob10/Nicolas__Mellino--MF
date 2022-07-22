@@ -169,7 +169,7 @@ body {
   margin-top: 1em;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1024px) {
   .title {
     margin-right: 2rem;
     margin-top: 1em;
@@ -213,7 +213,7 @@ body {
   margin-top: 1em;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1024px) {
   .title {
     margin-right: 2rem;
     margin-top: 1em;

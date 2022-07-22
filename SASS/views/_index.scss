@@ -1,7 +1,8 @@
+@import '../utilities/mixins';
 
 .galery{
 
-    @include gridlayout(1, auto, 12, auto, 0.2em);
+    @include gridlayout(1, 100vw, 12, 20em, 0.2em);
     margin-top: 3em;
 
     &__img{

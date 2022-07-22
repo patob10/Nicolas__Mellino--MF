@@ -1,8 +1,9 @@
 @import '../base/typo';
+@import '../utilities/mixins';
+
 
 .body{
     @include gridlayout(1 , 100vw , 3 , auto){
-
     };
 }
 
@@ -100,7 +101,6 @@
     .header{
         flex-direction: row;
         justify-content: space-between;
-
         &wrapper1{
             width: 30%;
         }

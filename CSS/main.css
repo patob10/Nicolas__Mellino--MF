@@ -516,10 +516,10 @@ body {
 .galery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-  grid-template-columns: repeat(1, auto);
-  -ms-grid-rows: auto 0.2em auto 0.2em auto 0.2em auto 0.2em auto 0.2em auto 0.2em auto 0.2em auto 0.2em auto 0.2em auto 0.2em auto 0.2em auto;
-  grid-template-rows: repeat(12, auto);
+  -ms-grid-columns: 100vw;
+  grid-template-columns: repeat(1, 100vw);
+  -ms-grid-rows: 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em 0.2em 20em;
+  grid-template-rows: repeat(12, 20em);
   gap: 0.2em;
   margin-top: 3em;
 }

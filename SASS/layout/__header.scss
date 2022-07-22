@@ -6,7 +6,7 @@ $nav-font: 'Roboto-Serif';
 
 
 .body{
-    @include gridlayout(1 , 100vw , 20 , auto){
+    @include gridlayout(1 , 100vw , 12 , auto){
 
     };
 }
@@ -19,7 +19,7 @@ $nav-font: 'Roboto-Serif';
     width: 100vw;
   
     &__wrapper1 {
-        width: 50%;
+        width: 60%;
         height: 15rem;
     }
 
@@ -42,7 +42,7 @@ $nav-font: 'Roboto-Serif';
         font-family: $nav-font;
         font-style: italic;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 17px;
         color: $primary-color;
     }
 
@@ -59,22 +59,16 @@ $nav-font: 'Roboto-Serif';
     color: #25d366;
 }
 
-@include cel__s {
-    .header{
-        flex-wrap: nowrap;
-    }
-    .ul__a{
-        font-size: 17px;            
-    }
-
+@include cel__s{
     .header__wrapper1{
-        width: 60%;
+        width: 50%;
     }
 
-    .fa-whatsapp{
-        display: none;
+    .ul__a{
+        font-size: 22px;            
     }
 }
+
 @include tablet__s{
 
     .header__wrapper1{
@@ -111,10 +105,12 @@ $nav-font: 'Roboto-Serif';
     .header{
         flex-direction: row;
         justify-content: space-between;
+
+        &wrapper1{
+            width: 30%;
+        }
     }
-    .header__wrapper1{
-        width: 30%;
-    }
+    
 }
 
 @include laptop__b{

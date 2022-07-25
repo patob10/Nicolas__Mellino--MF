@@ -41,7 +41,7 @@ display: inline-block;
 padding-inline: 1rem;
 }
 .footer {
-    // width: ;
+    grid-area: "footer";
     @include flexbox(column-reverse,nowrap, start, center){
         gap: 0.1em;
     };

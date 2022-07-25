@@ -2,11 +2,16 @@
 @import '../utilities/mixins';
 
 .body{
-    @include gridlayout(1 , auto , 4 , auto){
-    };
+    // @include gridlayout(1 , auto , 4 , auto){
+    // };
+    grid-template-columns: auto;
+    grid-template-areas: "header"
+                         "main"
+                        "footer";
 }
 
 .header {
+    grid-area: "header";
    
     @include flexbox(column,nowrap, start, center){
         gap: 0.1em;
@@ -86,7 +91,6 @@
 
 @include tablet__s{
     .header{
-        height: 12em;
         margin-bottom: 1.5em;
     }
     .header__wrapper1{

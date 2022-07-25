@@ -11312,10 +11312,10 @@ body {
 }
 .galery {
   display: grid;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(12, 20em);
   gap: 0.2em;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 .galery__div:nth-child(1) {
   grid-column: 1/span 1;
@@ -11335,7 +11335,7 @@ body {
 }
 .galery__div:nth-child(7) {
   grid-column: 1/span 1;
-  grid-row: 7/span 2;
+  grid-row: 7/span 1;
 }
 .galery__img {
   width: 100%;

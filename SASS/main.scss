@@ -1,8 +1,9 @@
 @import '../assets/node_modules/bootstrap/scss/bootstrap.scss';
 @import './base/_reset';
+@import './base/body';
+@import './base/colors';
 @import './base/typo';
 @import './utilities/_mixins';
-@import './utilities/functions';
 @import './layout/_header';
 @import './layout/_footer';
 @import './views/_index';

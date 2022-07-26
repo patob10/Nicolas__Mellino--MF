@@ -1,14 +1,6 @@
 @import '../base/typo';
+@import '../base/colors';
 @import '../utilities/mixins';
-
-.body{
-    // @include gridlayout(1 , auto , 4 , auto){
-    // };
-    grid-template-columns: auto;
-    grid-template-areas: "header"
-                         "main"
-                        "footer";
-}
 
 .header {
     grid-area: "header";

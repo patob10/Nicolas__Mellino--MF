@@ -42,6 +42,7 @@
   &__h1{
     font-size: 30px;
     text-align: right;
+
   }
   &__hr{
     width: 45%;
@@ -86,11 +87,6 @@
     &__h1 {
         font-size: 40px;
         text-align: right;
-
-        &--left {
-            text-align: left;
-            margin-left: 2rem;
-          }
       }
 
       &__hr{

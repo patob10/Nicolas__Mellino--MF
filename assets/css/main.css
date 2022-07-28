@@ -11827,7 +11827,7 @@ body {
   color: whitesmoke;
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .formulario__wrapper {
     display: grid;
     grid-template-columns: repeat(1, 100%);

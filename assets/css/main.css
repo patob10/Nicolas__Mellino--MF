@@ -11765,6 +11765,7 @@ body {
   }
 }
 .formulario__wrapper {
+  margin-top: 1.5em;
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 .formulario__wrapper > * {

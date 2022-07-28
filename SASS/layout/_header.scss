@@ -79,10 +79,12 @@
 @include tablet__s{
     .header{
         margin-bottom: 1.5em;
+
+        &__wrapper1{
+            width: 38%;
+        }
     }
-    .header__wrapper1{
-        width: 38%;
-    }
+  
 
     .ul__li{
         padding-inline: 1em;
@@ -114,6 +116,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-content: flex-start;
+        
         &__wrapper1{
             width: 20%;
         }

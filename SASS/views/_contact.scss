@@ -2,7 +2,7 @@
 @import '../base/typo';
 @import '../utilities/mixins';
 
-.contact{
+.info{
     width: 100%;
     height: auto;
     display: flex;
@@ -14,8 +14,8 @@
         justify-content: space-around;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
         width: 100%;
     }
 
@@ -46,10 +46,10 @@
 }
 
 @include tablet__m{
-.contact{
+.info{
     @include gridlayout(2, 1fr, 2, 1fr, 1em);
     row-gap: 1em;
-    margin-top: 1em;
+    margin-top: 2em;
 
     &__div:nth-child(1){
     grid-column: 1 / span 1;
@@ -78,99 +78,93 @@
 // INICIO FORMULARIO
 
 
-.form__wrapper{
-    margin-top: 20em;
+.formulario__wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-    margin: 4em;
-}
-.form__wrapper > *{
-    padding: 1em;
-}
-.form__form{
-    background-color: #1d1d1d;
-}
-.form__p{
-    margin: 0;
-    padding: 1em;
-}
 
-/* Grid para dividir el dormulario en dos partes */
-.form__div{
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-}
-.form__div .form__block{
-    grid-column: 1 / 3;
-}/* los que tengan clase block van a ocupar todo el largo del grid */
-
-.form__button,
-.form__input,
-.form__textarea{
-    background: none;
-    width:100%;
-    border: none;
-    padding: .7em;
-    border-bottom: 1px solid #f90404b1;
-    color: white;
-    outline: 0;
-
-}
-.form__button{
-    background-color: #f90404b1;
-    border: none;
-    padding: 1em;
-    text-transform: uppercase;
-    border-radius: 10px;
-    width: 200%;
-    margin-top: 2em;
-}
-
-.form__button:hover,
-.form__button:focus{
-    background-color: greenyellow;
-    color: black;
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
-.form__button{
-    font-size: 17px;
-}
-
-.contact__info{
-    background-color: black;
-}
-.info__h3,
-.info__li,
-.info__i,
-.info__p {
-    background-color: #1d1d1d00;
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-.info__ul{
-    list-style: none;
-    padding: 0;
-    background-color: #1d1d1d00;
-
-}
-.info__i{
-    padding: .3em;
-}
-
-
-/* Desktop */
-@media (min-width: 700px){
-    .contact__wrapper{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .contact-wrapper > *{
-        padding: 2em;
-    }
-    .contact__info h4,
-    .contact__info ul,
-    .contact__info p{
+    & > * {
         padding: 1em;
-        text-align: left;
     }
 }
+
+.formulario__form {
+    background: $form-background-color;
+
+    & form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & label {
+            display: block;
+        }
+
+        & p {
+            margin: 0;
+            padding: 1em;
+        }
+
+        & .form__width {
+            grid-column: 1 / 3;
+        }
+        
+        & .form__left {
+            grid-column: 1 / 2;
+        }
+        
+        & .form__right {
+            grid-column: 2 / 3;
+        }
+
+        & button,
+        & input,
+        & textarea {
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: whitesmoke;
+            border-bottom: 1px solid whitesmoke;
+        }
+
+        & button {
+            background: $primary-color;
+            border-radius: 1em;
+            border: 0;
+            padding: 1em;
+        }
+        
+        & button:hover{
+            color: whitesmoke;
+            background-color: rgba(0, 0, 255, 0.253);
+        }
+    }
+}
+
+.form__right{
+    text-align: center;
+    align-self: center;
+}
+
+.form__width{
+    color: whitesmoke;
+}
+
+::placeholder {
+    color: whitesmoke;
+}
+
+@media(min-width: 700px) {
+    .formulario__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+
+        & > * {
+            padding: 2em;
+        }
+    }
+    .formulario__form form {
+        width: 100%;
+    }
+
+}
+
